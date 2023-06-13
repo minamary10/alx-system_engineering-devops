@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'FNR==NR{lines[$0]=1;next} !($0 in lines)'
+paste -d, - - | cut -d, -f1
